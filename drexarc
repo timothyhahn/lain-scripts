@@ -1,0 +1,32 @@
+#!/bin/bash
+
+if [ -z "$1" ]; then
+    echo "Usage:  drexarc DIRECTORY"
+    exit 1
+fi
+
+USERNAME="tyh25"
+
+echo "(t)ar or (z)ip: "
+read FORMAT
+
+if [ "$FORMAT" != "t" ] && [ "$FORMAT" != "z" ]; then
+    echo "Format unknown, please use the letters indicated."
+    exit 1
+fi
+
+echo "class code: "
+read CLASS
+
+echo "assignment code: "
+read ASSIGNMENT
+
+OUTPUT="$CLASS-$USERNAME-$ASSIGNMENT"
+
+if [ "$FORMAT" == "t" ];  then
+    tar -cvf "$OUTPUT.tar" "$1"  
+fi
+
+if [ "$FORMAT" == "z" ]; then
+    zip -r "$OUTPUT.zip" "$1"
+fi

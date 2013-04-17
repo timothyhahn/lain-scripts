@@ -22,11 +22,17 @@ echo "assignment code: "
 read ASSIGNMENT
 
 OUTPUT="$CLASS-$USERNAME-$ASSIGNMENT"
+TMPDIR="$OUTPUT/"
+
+
+cp -R "$1" $TMPDIR
 
 if [ "$FORMAT" == "t" ];  then
-    tar -cvf "$OUTPUT.tar" "$1"  
+    tar -cvf "$OUTPUT.tar" "$TMPDIR"
 fi
 
 if [ "$FORMAT" == "z" ]; then
-    zip -r "$OUTPUT.zip" "$1"
+    zip -r "$OUTPUT.zip" "$TMPDIR"
 fi
+
+rm -rf $TMPDIR

@@ -1,7 +1,7 @@
 #!/bin/bash
 
 if [ -z "$1" ]; then
-    echo "Usage: md2pdf INPUT [OUTPUT]"
+    echo "Usage: md2doc INPUT [OUTPUT]"
     exit 1
 fi
 
@@ -10,13 +10,13 @@ INPUT="$1"
 if [ "$2" ]; then
     OUTPUT="$2"
 else
-    OUTPUT="${1%.*}.pdf" 
+    OUTPUT="${1%.*}.doc" 
 fi
 
 
 
 markdown "$INPUT" > /tmp/temp.html ## I run markdown first because pandoc has a slightly different, but significantly stupider way of translating markdown
 pandoc -H ~/scripts/deps/margins.sty /tmp/temp.html -o "$OUTPUT"
-evince "$OUTPUT" &
+libreoffice "$OUTPUT" &
 rm /tmp/temp.html
 

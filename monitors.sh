@@ -12,7 +12,7 @@ function connect(){
  
 function disconnect(){
 #echo "disconnect" > /home/tim/hi
-	xrandr --output DP1 --off
+	xrandr --output DP1 --off --output eDP1 --auto
 }
  
 xrandr | grep "^DP1 connected" &> /dev/null && connect || disconnect

@@ -1,0 +1,6 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =4
+let g:netrw_dirhist_1='/home/tim/code/python/inquizition-web/inquizition/app'
+let g:netrw_dirhist_2='/etc/gtk-2.0'
+let g:netrw_dirhist_3='/etc/gtk-3.0'
+let g:netrw_dirhist_4='/usr/share/gtk-2.0'

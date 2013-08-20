@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Repository xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Name>MonoDevelop Add-in Repository</Name>
+  <Url>http://addins.monodevelop.com/Stable/Linux/4.0.9/root.mrep</Url>
+  <Addin>
+    <Url>MonoDevelop.FSharpBinding-3.2.15.mpack</Url>
+    <Addin>
+      <Id>FSharpBinding</Id>
+      <Namespace>MonoDevelop</Namespace>
+      <Name>F# Language Binding</Name>
+      <Version>3.2.15</Version>
+      <BaseVersion />
+      <Author>F# Open Source Foundation (fsharp.org)</Author>
+      <Copyright>F# Open Source Foundation (fsharp.org)</Copyright>
+      <Url>http://fsharp.github.com/fsharpbinding</Url>
+      <Description>F# Language Binding (for MonoDevelop 4.0). Install F# 3.0 before using.</Description>
+      <Category>Language bindings</Category>
+      <Dependencies>
+        <AddinDependency>
+          <AddinId>Core</AddinId>
+          <Version>4.0</Version>
+        </AddinDependency>
+        <AddinDependency>
+          <AddinId>Ide</AddinId>
+          <Version>4.0</Version>
+        </AddinDependency>
+        <AddinDependency>
+          <AddinId>SourceEditor2</AddinId>
+          <Version>4.0</Version>
+        </AddinDependency>
+        <AddinDependency>
+          <AddinId>Refactoring</AddinId>
+          <Version>4.0</Version>
+        </AddinDependency>
+      </Dependencies>
+      <OptionalDependencies />
+      <Properties>
+        <Property name="DownloadSize">1126318</Property>
+      </Properties>
+    </Addin>
+  </Addin>
+  <Addin>
+    <Url>MonoDevelop.StyleCop-1.0.1.5.mpack</Url>
+    <Addin>
+      <Id>StyleCop</Id>
+      <Namespace>MonoDevelop</Namespace>
+      <Name>StyleCop Support</Name>
+      <Version>1.0.1.5</Version>
+      <BaseVersion />
+      <Author>Alexander Jochum</Author>
+      <Copyright>APL 2.0</Copyright>
+      <Url />
+      <Description>Provides StyleCop support to MonoDevelop</Description>
+      <Category>IDE extensions</Category>
+      <Dependencies>
+        <AddinDependency>
+          <AddinId>Core</AddinId>
+          <Version>4.0</Version>
+        </AddinDependency>
+        <AddinDependency>
+          <AddinId>Ide</AddinId>
+          <Version>4.0</Version>
+        </AddinDependency>
+        <AddinDependency>
+          <AddinId>SourceEditor2</AddinId>
+          <Version>4.0</Version>
+        </AddinDependency>
+      </Dependencies>
+      <OptionalDependencies />
+      <Properties>
+        <Property name="DownloadSize">2380472</Property>
+      </Properties>
+    </Addin>
+  </Addin>
+  <Addin>
+    <Url>Unity.Utilities-4.0.mpack</Url>
+    <Addin>
+      <Id>Unity.Utilities</Id>
+      <Namespace />
+      <Name>Utilities for use with Unity</Name>
+      <Version>4.0</Version>
+      <BaseVersion />
+      <Author>Clifford Roche, Levi Bard</Author>
+      <Copyright>MIT/X11</Copyright>
+      <Url>http://github.com/cmroche/MonoDevelop.Debugger.Soft.Unity</Url>
+      <Description>This addin adds support for shaderlab, cginc, and glsl syntax highlighting. Easy access to Unity Script Reference, and Unity behaviour templates.</Description>
+      <Category>Unity</Category>
+      <Dependencies>
+        <AddinDependency>
+          <AddinId>MonoDevelop.Ide</AddinId>
+          <Version>4.0</Version>
+        </AddinDependency>
+        <AddinDependency>
+          <AddinId>MonoDevelop.Core</AddinId>
+          <Version>4.0</Version>
+        </AddinDependency>
+        <AddinDependency>
+          <AddinId>MonoDevelop.SourceEditor2</AddinId>
+          <Version>4.0</Version>
+        </AddinDependency>
+      </Dependencies>
+      <OptionalDependencies />
+      <Properties>
+        <Property name="DownloadSize">7221</Property>
+      </Properties>
+    </Addin>
+  </Addin>
+</Repository>

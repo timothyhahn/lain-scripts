@@ -1,0 +1,9 @@
+{
+	"installed_packages":
+	[
+		"JSHint",
+		"Package Control",
+		"Python Pep8 Lint",
+		"SublimeLinter"
+	]
+}

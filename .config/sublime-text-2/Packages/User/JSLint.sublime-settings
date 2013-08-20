@@ -1,0 +1,10 @@
+{
+    // Ignore errors, regex.
+    "ignore_errors":
+    [
+        // "Expected an identifier and instead saw 'undefined' \(a reserved word\)"
+        //"'Backbone' was used before it was defined.",
+        "'window' was used before it was defined.",
+        "'$' was used before it was defined."
+    ]
+}

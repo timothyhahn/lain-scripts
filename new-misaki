@@ -1,0 +1,15 @@
+#!/bin/bash
+
+DATE=$(date +%Y-%m-%d)
+echo "Title: "
+read title
+FILENAME="$DATE-$title.html.clj"
+
+echo "Tags: "
+read tags
+
+echo "; @layout post" >> "$FILENAME"
+echo "; @title  $title" >> "$FILENAME"
+echo "; @tag    $tags" >> "$FILENAME"
+
+exec vim "$FILENAME"

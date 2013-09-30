@@ -19,10 +19,9 @@ function spawn {
 }
 
 spawn "wicd-client" "wicd-client --tray"
-spawn "alsa-tray"
 spawn "xcompmgr"
 spawn "caffeine"
 spawn "mpd"
 spawn "/home/tim/scripts/wallpaper"
 spawn "dropboxd"
-spawn "pommed" "/home/tim/scripts/pommed"
+spawn "pulseaudio"

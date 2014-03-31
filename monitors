@@ -1,0 +1,16 @@
+#!/bin/bash
+
+## This file exists because udev runs scripts as root/something weird
+## so xrandr never found the correct display.
+
+case $1 in
+	right)
+		xrandr --output DFP1 --auto --output CRT1 --off
+		;;
+	left)
+		xrandr --output CRT1 --auto --output DFP1 --off
+		;;
+	*)
+		xrandr --output CRT1 --auto --primary --left-of DFP1 --auto
+		;;
+esac

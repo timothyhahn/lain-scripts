@@ -17,6 +17,6 @@ fi
 
 markdown "$INPUT" > /tmp/temp.html ## I run markdown first because pandoc has a slightly different, but significantly stupider way of translating markdown
 pandoc -H ~/scripts/deps/margins.sty /tmp/temp.html -o "$OUTPUT"
-evince "$OUTPUT" &
+open "$OUTPUT" &
 rm /tmp/temp.html
 
